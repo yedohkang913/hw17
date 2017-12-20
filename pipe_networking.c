@@ -41,7 +41,7 @@ int server_connect(int from_client) {
 	int to_client = open(buffer, O_WRONLY);
 	
 	write(to_client, buffer, sizeof(ACK));
-	printf("[subserver]: wrote ACK\n");
+	printf("[subserver]: wrote " ACK "\n");
 	
 	read(from_client, buffer, sizeof(buffer));
 	
